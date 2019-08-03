@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-family: sans-serif, Arial, serif;
+}
+
+body {
+  margin: auto;
+  font-size: 16px;
+  height: 100%;
+  background-color: $clr1;
+}
+
+.App {
+  text-align: center;
+  max-width: 100%;
+}

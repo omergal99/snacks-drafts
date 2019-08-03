@@ -1,0 +1,96 @@
+.main4 {
+  background-color: #257747;
+  height: calc(100vh - 34px);
+  
+  .wrap {
+    background-color: #257747;
+    width: 400px;
+    margin: 0 auto;
+    height: 200px;
+  }
+  .tommy {
+    position: relative;
+    width: 280px;
+    padding: 8px 10px 8px 10px;
+    margin: 90px auto;
+    height: 86px;
+    background-color: rgba(255, 78, 78, 0);
+    border: 3px solid white;
+    display: inline-block;
+  }
+
+  .first-line {
+    margin-top: -3px;
+    margin-bottom: -14px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 28px;
+    font-family: amiri, Arial, Helvetica, sans-serif;
+  }
+
+  .second-line {
+    font-style: italic;
+    text-transform: lowercase;
+    color: white;
+    font-size: 22px;
+    font-family: cardo, Arial, Helvetica, sans-serif;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    background-color: #257747;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+  }
+  .cover {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+  }
+
+  .circle.left-top {
+    left: -17px;
+    top: -17px;
+  }
+  .cover.left-top {
+    background: linear-gradient(to right, #257747 50%, #eee 50%, #25774700 50%),
+      linear-gradient(to bottom, #257747 50%, #eee 50%, #25774700 50%);
+    left: -19px;
+    top: -19px;
+  }
+
+  .circle.left-bottom {
+    left: -17px;
+    top: 67px;
+  }
+  .cover.left-bottom {
+    background: linear-gradient(to right, #257747 50%, #eee 50%, #6d8be300 50%),
+      linear-gradient(to bottom, #47ffd500 50%, #eee 50%, #257747 50%);
+    left: -19px;
+    top: 67px;
+  }
+
+  .circle.right-top {
+    left: 261px;
+    top: -17px;
+  }
+  .cover.right-top {
+    background: linear-gradient(to right, #25774700 50%, #eee 50%, #257747 50%),
+      linear-gradient(to bottom, #257747 50%, #eee 50%, #25774700 50%);
+    left: 261px;
+    top: -19px;
+  }
+
+  .circle.right-bottom {
+    left: 261px;
+    top: 67px;
+  }
+  .cover.right-bottom {
+    background: linear-gradient(to right, #25774700 50%, #eee 50%, #257747 50%),
+      linear-gradient(to bottom, #25774700 50%, #eee 50%, #257747 50%);
+    left: 261px;
+    top: 67px;
+  }
+}

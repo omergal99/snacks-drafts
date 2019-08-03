@@ -1,0 +1,52 @@
+.main3 {
+  
+
+  .all-pic {
+    // .hole {
+    //   position: absolute;
+    //   top: 100px;
+    //   left: 200px;
+    // }
+    // .full::after {
+    //   content: "";
+    //   display: block;
+    //   position: relative;
+    //   height: 560px;
+    //   width: 260px;
+    //   background-color: rgba(255, 0, 0, 0.466);
+    // }
+    .full {
+      position: absolute;
+      top: 100px;
+      left: 200px;
+      height: 560px;
+      width: 260px;
+      display: grid;
+      grid-template-columns: 87px 107px 1fr;
+      grid-template-rows: 104px 216px 26px 1fr;
+      //   background-color: rgb(207, 168, 202);
+      background-image: url("../img/man/man hole.png");
+      background-position: 0 0;
+      background-size: 260px;
+      background-repeat: no-repeat;
+    }
+    .head {
+      grid-area: 1 / 2 / 1 / 2;
+      &:hover {
+        background-color: rgb(145, 224, 108);
+      }
+    }
+    .stomec {
+      background-color: rgb(224, 222, 108);
+      grid-area: 2 / 2 / 2 / 2;
+    }
+    .hands {
+      background-color: rgb(224, 160, 108);
+      grid-area: 4 / 1 / 2 / 1;
+    }
+    .legs {
+      background-color: rgb(108, 220, 224);
+      grid-area: 3 / 2 / 5 / 2;
+    }
+  }
+}
