@@ -7,14 +7,24 @@ function PilotSwitch({ isChecked, idx, onHandleChanged }) {
   const switchOn = new Audio("assets/sounds/pilot/switch on.mp3");
   const switchOff = new Audio("assets/sounds/pilot/switch off.mp3");
   switchOn.volume = 0.5;
+  switchOff.volume = 0.7;
 
   const handleChanged = (ev) => {
-    // (ev.target.checked) ? switchOn.play() : switchOff.play();
+    (ev.target.checked) ? switchOn.play() : switchOff.play();
   }
   const handleTouch = (ev) => {
+    // console.log('aasasasas')
     // console.log(ev.target)
     // console.log(checkInput.current)
-    (checkInput.current.checked) ? switchOn.play() : switchOff.play();
+    (!checkInput.current.checked) ? switchOn.play() : switchOff.play();
+    // if(checkInput.current.checked){
+    //   console.log(checkInput.current)
+    //   switchOn.play()
+    // }else{
+    //   console.log(checkInput.current)
+    //   console.log(7777)
+    //   switchOff.play()
+    // }
   }
 
   return (
