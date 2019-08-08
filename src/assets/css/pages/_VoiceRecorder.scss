@@ -1,0 +1,110 @@
+.voice-recorder {
+  background-color: #fff;
+  height: 100%;
+  text-align: center;
+  font-family: amiri, cursive, Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  .title {
+    h2 {
+      margin: 0;
+      padding: 16px 0 8px 0;
+    }
+    p {
+      margin: 0;
+      padding: 0 0 8px 0;
+    }
+  }
+  .showing {
+    padding: 0 0 16px 0;
+    .circle-color {
+      line-height: 175px;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      margin: 8px auto 12px auto;
+      background-color: rgb(204, 65, 65);
+      border: 8px solid rgb(238, 180, 180);
+    }
+    span {
+      min-height: 50px;
+      width: 90%;
+      display: block;
+      margin: 0 auto;
+      background-color: #eff0f0;
+      border-radius: 2px;
+    }
+  }
+  .is-recording {
+    height: 20px;
+    .text {
+      display: inline-block;
+    }
+    .red-animation {
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      background-color: rgb(218, 21, 21);
+      border: 1.5px solid black;
+      border-radius: 50%;
+      padding-left: 4px;
+      margin-left: 4px;
+      position: relative;
+      top: 3px;
+      animation: leds-off 1.4s infinite;
+      animation-timing-function: ease;
+    }
+    @keyframes leds-off {
+      0% {
+        background-color: rgba(218, 21, 21, 0);
+        border: 1.5px solid rgba(0, 0, 0, 0);
+      }
+      45% {
+        background-color: rgb(218, 21, 21);
+        border: 1.5px solid black;
+      }
+      55% {
+        background-color: rgba(218, 21, 21, 0.918);
+        border: 1.5px solid rgba(0, 0, 0, 0.89);
+      }
+      80% {
+        background-color: rgba(218, 21, 21, 0);
+        border: 1.5px solid rgba(0, 0, 0, 0);
+      }
+      100% {
+        background-color: rgba(218, 21, 21, 0);
+        border: 1.5px solid rgba(0, 0, 0, 0);
+      }
+      //   from {
+      //     background-color: rgb(218, 21, 21);
+      //   border: 1.5px solid black;
+      //   }
+      //   to {
+      //     background-color: rgba(218, 21, 21, 0.096);
+      //     border: 1.5px solid rgba(0, 0, 0, 0.281);
+      //   }
+    }
+  }
+  .buttons {
+    padding: 20px 0 20px 0;
+    button {
+      cursor: pointer;
+      min-width: 100px;
+      padding: 4px;
+      border: none;
+      background-color: rgb(216, 216, 190);
+      &:hover {
+        background-color: rgb(236, 236, 204);
+      }
+      img {
+        padding: 4px;
+        display: block;
+        height: 64px;
+        margin: 0 auto;
+      }
+      //   span{
+      //     padding: 0 0 4px 0;
+      //     display: block;
+      //   }
+    }
+  }
+}

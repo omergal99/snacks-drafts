@@ -12,11 +12,11 @@ function PilotSwitch({ isChecked, idx, onHandleChanged }) {
   const handleChanged = (ev) => {
     (ev.target.checked) ? switchOn.play() : switchOff.play();
   }
-  const handleTouch = (ev) => {
+  // const handleTouch = (ev) => {
     // console.log('aasasasas')
     // console.log(ev.target)
     // console.log(checkInput.current)
-    (!checkInput.current.checked) ? switchOn.play() : switchOff.play();
+    // (!checkInput.current.checked) ? switchOn.play() : switchOff.play();
     // if(checkInput.current.checked){
     //   console.log(checkInput.current)
     //   switchOn.play()
@@ -25,7 +25,7 @@ function PilotSwitch({ isChecked, idx, onHandleChanged }) {
     //   console.log(7777)
     //   switchOff.play()
     // }
-  }
+  // }
 
   return (
     <div className="pilot-switch">
@@ -33,10 +33,10 @@ function PilotSwitch({ isChecked, idx, onHandleChanged }) {
         <span className="switch-border1">
           <span className="switch-border2">
             <input id={`switch${idx}`} ref={checkInput}
-              // onClick={handleChanged.bind(this)}
+              onClick={handleChanged.bind(this)}
               type="checkbox" defaultChecked={isChecked} />
             <label htmlFor={`switch${idx}`}
-              onTouchStart={handleTouch.bind(this)}
+              // onTouchStart={handleTouch.bind(this)}
             ></label>
             <span className="switch-top"></span>
             <span className="switch-shadow"></span>
