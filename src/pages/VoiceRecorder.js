@@ -19,10 +19,11 @@ const options = {
 
 function VoiceRecorder({ transcript, resetTranscript, startListening, stopListening, recognition, listening }) {
   // recognition.lang = 'en-US';
-  recognition.lang = 'he-IL';
+  // recognition.lang = 'he-IL';
   const baseDiv = useRef(null);
 
   const [color, changeColor] = useState('');
+  const [lang, changeLang] = useState('Auto');
   var colors = {
     "aliceblue": "#f0f8ff", "antiquewhite": "#faebd7", "aqua": "#00ffff", "aquamarine": "#7fffd4", "azure": "#f0ffff",
     "beige": "#f5f5dc", "bisque": "#ffe4c4", "black": "#000000", "blanchedalmond": "#ffebcd", "blue": "#0000ff", "blueviolet": "#8a2be2", "brown": "#a52a2a", "burlywood": "#deb887",
@@ -60,20 +61,31 @@ function VoiceRecorder({ transcript, resetTranscript, startListening, stopListen
 
   const findColor = voiceColor => {
     if (typeof colors[voiceColor] != 'undefined') {
-      changeColor(colors[voiceColor] + 'ff')
+      changeColor(colors[voiceColor])
+    }
+  }
+
+  const toggleLang = () => {
+    if(lang === 'Auto' || lang === 'Hebrew'){
+      changeLang('English');
+      recognition.lang = 'en-US';
+    }else{
+      changeLang('Hebrew');
+      recognition.lang = 'he-IL';
     }
   }
 
   return (
     <div className="voice-recorder">
-      <div ref={baseDiv} style={{ backgroundColor: `${color}` }} mycustomattribute={color} >
+      <div ref={baseDiv} style={{ backgroundColor: `${color}20` }} mycustomattribute={color} >
         <div className="title">
           <h2>Color recorder</h2>
           <p>Record your color Theme and the app change the color</p>
         </div>
 
         <div className="showing">
-          <div className="circle-color">{color}</div>
+          <div className="circle-color" 
+          style={{backgroundColor: `${color}` }}>{color}</div>
           <div>Your Text Record:</div>
           <span>{transcript}</span>
         </div>
@@ -87,7 +99,7 @@ function VoiceRecorder({ transcript, resetTranscript, startListening, stopListen
           }
         </div>
 
-        <div className="buttons flex space-around">
+        <div className="buttons flex space-center">
           <button onClick={resetTranscript}>
             <span>Reset</span>
             <img src="assets/img/record/icon.png" alt="" />
@@ -99,6 +111,10 @@ function VoiceRecorder({ transcript, resetTranscript, startListening, stopListen
           <button onClick={stopListening}>
             <span>Stop</span>
             <img src="assets/img/record/stop.png" alt="" />
+          </button>
+          <button className="lang-btn flex-col space-around align-center" onClick={toggleLang}>
+            <span>{lang}</span>
+            <span>HE / EN</span>
           </button>
         </div>
       </div>
