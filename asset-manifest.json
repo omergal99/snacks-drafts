@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/snacks-drafts/static/css/main.5f0a87d4.chunk.css",
-    "main.js": "/snacks-drafts/static/js/main.9743bee0.chunk.js",
-    "main.js.map": "/snacks-drafts/static/js/main.9743bee0.chunk.js.map",
+    "main.css": "/snacks-drafts/static/css/main.960b6c9a.chunk.css",
+    "main.js": "/snacks-drafts/static/js/main.c3f38079.chunk.js",
+    "main.js.map": "/snacks-drafts/static/js/main.c3f38079.chunk.js.map",
     "runtime~main.js": "/snacks-drafts/static/js/runtime~main.43233a0b.js",
     "runtime~main.js.map": "/snacks-drafts/static/js/runtime~main.43233a0b.js.map",
-    "static/js/2.8d5f9fdc.chunk.js": "/snacks-drafts/static/js/2.8d5f9fdc.chunk.js",
-    "static/js/2.8d5f9fdc.chunk.js.map": "/snacks-drafts/static/js/2.8d5f9fdc.chunk.js.map",
+    "static/js/2.59cbf04d.chunk.js": "/snacks-drafts/static/js/2.59cbf04d.chunk.js",
+    "static/js/2.59cbf04d.chunk.js.map": "/snacks-drafts/static/js/2.59cbf04d.chunk.js.map",
     "index.html": "/snacks-drafts/index.html",
-    "precache-manifest.57d0a100fd10f88859fc2256be61855c.js": "/snacks-drafts/precache-manifest.57d0a100fd10f88859fc2256be61855c.js",
+    "precache-manifest.0acd8b1f7cff5af69499ee65ff9485b5.js": "/snacks-drafts/precache-manifest.0acd8b1f7cff5af69499ee65ff9485b5.js",
     "service-worker.js": "/snacks-drafts/service-worker.js",
-    "static/css/main.5f0a87d4.chunk.css.map": "/snacks-drafts/static/css/main.5f0a87d4.chunk.css.map",
+    "static/css/main.960b6c9a.chunk.css.map": "/snacks-drafts/static/css/main.960b6c9a.chunk.css.map",
     "static/media/App.scss": "/snacks-drafts/static/media/new-zealand-4.e7863c7b.jpg"
   }
 }
