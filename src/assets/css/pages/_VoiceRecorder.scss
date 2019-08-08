@@ -1,6 +1,5 @@
 .voice-recorder {
   background-color: #fff;
-  height: 100%;
   text-align: center;
   font-family: amiri, cursive, Arial, Helvetica, sans-serif;
   font-size: 1.2em;
@@ -80,14 +79,16 @@
   .buttons {
     padding: 20px 10px 20px 10px;
     button {
-      margin: 0px 10px;
+      border-radius: 2px;
+      margin: 0px 10px 20px 10px;
+      height: 90px;
       cursor: pointer;
       min-width: 90px;
       padding: 4px;
       border: none;
       background-color: rgb(216, 216, 190);
       &:hover {
-        background-color: rgb(236, 236, 204);
+        background-color: rgb(245, 245, 214);
       }
       img {
         padding: 4px;

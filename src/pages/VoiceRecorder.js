@@ -66,10 +66,10 @@ function VoiceRecorder({ transcript, resetTranscript, startListening, stopListen
   }
 
   const toggleLang = () => {
-    if(lang === 'Auto' || lang === 'Hebrew'){
+    if (lang === 'Auto' || lang === 'Hebrew') {
       changeLang('English');
       recognition.lang = 'en-US';
-    }else{
+    } else {
       changeLang('Hebrew');
       recognition.lang = 'he-IL';
     }
@@ -77,45 +77,48 @@ function VoiceRecorder({ transcript, resetTranscript, startListening, stopListen
 
   return (
     <div className="voice-recorder">
-      <div ref={baseDiv} style={{ backgroundColor: `${color}20` }} mycustomattribute={color} >
+      <div ref={baseDiv} style={{ backgroundColor: `${color}10` }} mycustomattribute={color} >
         <div className="title">
           <h2>Color recorder</h2>
           <p>Record your color Theme and the app change the color</p>
         </div>
 
         <div className="showing">
-          <div className="circle-color" 
-          style={{backgroundColor: `${color}` }}>{color}</div>
+          <div className="circle-color"
+            style={{ backgroundColor: `${color}` }}>{color}</div>
           <div>Your Text Record:</div>
           <span>{transcript}</span>
         </div>
 
-        <div className="is-recording">
-          {listening &&
-            <div>
-              <div className='text'>recording... </div>
-              <div className="red-animation"></div>
-            </div>
-          }
-        </div>
 
-        <div className="buttons flex space-center">
-          <button onClick={resetTranscript}>
-            <span>Reset</span>
-            <img src="assets/img/record/icon.png" alt="" />
-          </button>
-          <button onClick={startListening}>
-            <span>Start Record</span>
-            <img src="assets/img/record/microphone.png" alt="" />
-          </button>
-          <button onClick={stopListening}>
-            <span>Stop</span>
-            <img src="assets/img/record/stop.png" alt="" />
-          </button>
-          <button className="lang-btn flex-col space-around align-center" onClick={toggleLang}>
-            <span>{lang}</span>
-            <span>HE / EN</span>
-          </button>
+        <div
+          style={{ backgroundColor: `${color}38` }}>
+          <div className="is-recording">
+            {listening &&
+              <div>
+                <div className='text'>recording... </div>
+                <div className="red-animation"></div>
+              </div>
+            }
+          </div>
+          <div className="buttons flex wrap space-center">
+            <button onClick={resetTranscript}>
+              <span>Reset</span>
+              <img src="assets/img/record/icon.png" alt="" />
+            </button>
+            <button onClick={startListening}>
+              <span>Start Record</span>
+              <img src="assets/img/record/microphone.png" alt="" />
+            </button>
+            <button onClick={stopListening}>
+              <span>Stop</span>
+              <img src="assets/img/record/stop.png" alt="" />
+            </button>
+            <button className="lang-btn flex-col space-around align-center" onClick={toggleLang}>
+              <span>{lang}</span>
+              <span>HE / EN</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
