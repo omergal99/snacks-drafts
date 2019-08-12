@@ -9,6 +9,7 @@ import Main3 from './pages/Main3';
 import Main4 from './pages/Main4';
 import pilotTable from './pages/pilotTable';
 import VoiceRecorder from './pages/VoiceRecorder';
+import Example from './pages/Example';
 
 //CMPS
 import NavBar from './cmps/NavBar';
@@ -33,6 +34,7 @@ class Router extends Component {
               <Route exact path="/Main4" component={Main4} />
               <Route exact path="/pilotTable" component={pilotTable} />
               <Route exact path="/VoiceRecorder" component={VoiceRecorder} />
+              <Route exact path="/Example" component={Example} />
             </Switch>
           </div>
 
