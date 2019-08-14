@@ -23,6 +23,7 @@ function VoiceRecorder({ transcript, resetTranscript, startListening, stopListen
   const baseDiv = useRef(null);
 
   const [color, changeColor] = useState('');
+
   const [lang, changeLang] = useState('Auto');
   var colors = {
     "aliceblue": "#f0f8ff", "antiquewhite": "#faebd7", "aqua": "#00ffff", "aquamarine": "#7fffd4", "azure": "#f0ffff",
@@ -52,11 +53,15 @@ function VoiceRecorder({ transcript, resetTranscript, startListening, stopListen
   };
 
   useEffect(() => {
+    document.title = "Voice Recorder";
     // console.log(transcript)
     var voiceColor = String(transcript).toLowerCase();
     // var voiceColor = String(transcript).slice(1);
     findColor(voiceColor);
     console.log(baseDiv.current)
+    return () => {
+      document.title = "Snacks-Drafts";
+    }
   });
 
   const findColor = voiceColor => {

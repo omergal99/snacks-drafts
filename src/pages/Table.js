@@ -1,16 +1,11 @@
 import React, { useState } from "react";
 
-function Example() {
+function Table() {
+  document.title = "Table";
 
   const [counters, setCounters] = useState([0, 1, 2, 3, 4, 5]);
 
-  const table = counters.map((number, idx) => {
-    return <div mycustomattribute={idx} key={idx} onClick={ev => addOne(ev, idx)}>
-      {number}
-    </div>
-  })
-
-  const addOne = (ev, idx) => {
+  const addOne = (idx) => {
     // console.log(ev.target.mycustomattribute, idx);
     // console.log(ev.target.getAttribute('mycustomattribute'));
     let editCounters = JSON.parse(JSON.stringify(counters));
@@ -18,11 +13,18 @@ function Example() {
     setCounters(editCounters);
   }
 
+  const table = counters.map((number, idx) => {
+    return <div mycustomattribute={idx} key={idx} onClick={() => addOne(idx)}>
+      {number}
+    </div>
+  })
+
+
   return (
-    <div className="example">
+    <div className="Table">
       {table}
     </div>
   );
 }
 
-export default React.memo(Example);
+export default React.memo(Table);

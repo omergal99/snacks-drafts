@@ -7,9 +7,11 @@ import Main from './pages/Main';
 import Main2 from './pages/Main2';
 import Main3 from './pages/Main3';
 import Main4 from './pages/Main4';
-import pilotTable from './pages/pilotTable';
+import PilotTable from './pages/PilotTable';
 import VoiceRecorder from './pages/VoiceRecorder';
-import Example from './pages/Example';
+import Table from './pages/Table';
+import Example2 from './pages/Example2';
+import Example3 from './pages/Example3';
 
 //CMPS
 import NavBar from './cmps/NavBar';
@@ -32,9 +34,11 @@ class Router extends Component {
               <Route exact path="/Main2" component={Main2} />
               <Route exact path="/Main3" component={Main3} />
               <Route exact path="/Main4" component={Main4} />
-              <Route exact path="/pilotTable" component={pilotTable} />
+              <Route exact path="/PilotTable" component={PilotTable} />
               <Route exact path="/VoiceRecorder" component={VoiceRecorder} />
-              <Route exact path="/Example" component={Example} />
+              <Route exact path="/Table" component={Table} />
+              <Route exact path="/Example2" component={Example2} />
+              <Route exact path="/Example3" component={Example3} />
             </Switch>
           </div>
 

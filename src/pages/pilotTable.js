@@ -1,10 +1,17 @@
-import React from 'react';
+// import React, { useEffect } from 'react';
+import React, { useRef, useEffect, useState } from "react";
+
 
 import PilotSwitch from '../cmps/PilotSwitch';
 
-function pilotTable() {
-
+function PilotTable() {
   const counts = [true, true, false];
+
+  const [h1Text, setH1Text] = useState('Hello CodeSandbox');
+
+  useEffect(() => {
+    document.title = "Pilot Table";
+  });
 
   // const switchOn = new Audio("assets/sounds/pilot/switch on.mp3");
   // const switchOff = new Audio("assets/sounds/pilot/switch off.mp3");
@@ -26,4 +33,4 @@ function pilotTable() {
   );
 }
 
-export default React.memo(pilotTable)
+export default React.memo(PilotTable)
