@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class Main3 extends Component {
+class Human extends Component {
 
   state = {
   }
@@ -31,4 +31,4 @@ class Main3 extends Component {
 }
 
 
-export default Main3
+export default Human

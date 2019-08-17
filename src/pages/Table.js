@@ -8,7 +8,8 @@ function Table() {
   const addOne = (idx) => {
     // console.log(ev.target.mycustomattribute, idx);
     // console.log(ev.target.getAttribute('mycustomattribute'));
-    let editCounters = JSON.parse(JSON.stringify(counters));
+    // let editCounters = JSON.parse(JSON.stringify(counters));
+    let editCounters = [...counters];
     editCounters[idx]++;
     setCounters(editCounters);
   }
@@ -19,9 +20,8 @@ function Table() {
     </div>
   })
 
-
   return (
-    <div className="Table">
+    <div className="table">
       {table}
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class Main4 extends Component {
+class Tommy extends Component {
 
   state = {
   }
@@ -34,4 +34,4 @@ class Main4 extends Component {
 }
 
 
-export default Main4
+export default Tommy
