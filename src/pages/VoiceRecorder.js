@@ -18,8 +18,7 @@ const options = {
 }
 
 function VoiceRecorder({ transcript, resetTranscript, startListening, stopListening, recognition, listening }) {
-  // recognition.lang = 'en-US';
-  // recognition.lang = 'he-IL';
+
   const baseDiv = useRef(null);
 
   const [color, changeColor] = useState('');
@@ -84,14 +83,13 @@ function VoiceRecorder({ transcript, resetTranscript, startListening, stopListen
     <div className="voice-recorder">
       <div ref={baseDiv} style={{ backgroundColor: `${color}10` }} mycustomattribute={color} >
         <div className="title">
-          <h2>Color recorder</h2>
+          <h1>Color recorder</h1>
           <p>Record your color Theme and the app change the color</p>
         </div>
 
         <div className="showing">
-          <div className="circle-color"
-            style={{ backgroundColor: `${color}` }}>{color}</div>
-          <div>Your Text Record:</div>
+          <div className="circle-color" style={{ backgroundColor: `${color}` }}>{color}</div>
+          <p>Your Text Record:</p>
           <span>{transcript}</span>
         </div>
 
