@@ -1,4 +1,4 @@
-quick look how the project looks up to now: https://omergal99.github.io/snacks-drafts/
+Quick look how the project looks up to now: https://omergal99.github.io/snacks-drafts/
 
 ### I write some drafts that you can see
 
