@@ -1,5 +1,5 @@
-// import React, { useEffect } from 'react';
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect } from 'react';
+// import React, { useEffect, useState } from "react";
 
 
 import PilotSwitch from '../cmps/PilotSwitch';
@@ -7,7 +7,7 @@ import PilotSwitch from '../cmps/PilotSwitch';
 function PilotTable() {
   const counts = [true, true, false];
 
-  const [h1Text, setH1Text] = useState('Hello CodeSandbox');
+  // const [h1Text, setH1Text] = useState('Hello CodeSandbox');
 
   useEffect(() => {
     document.title = "Pilot Table";

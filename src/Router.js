@@ -7,6 +7,9 @@ import Main from './pages/Main';
 import Main2 from './pages/Main2';
 import Human from './pages/Human';
 import Tommy from './pages/Tommy';
+import Coutries from './pages/Coutries';
+import Coutries2 from './pages/Coutries2';
+
 import PilotTable from './pages/PilotTable';
 import VoiceRecorder from './pages/VoiceRecorder';
 import Table from './pages/Table';
@@ -34,6 +37,9 @@ class Router extends Component {
               <Route exact path="/Main2" component={Main2} />
               <Route exact path="/Human" component={Human} />
               <Route exact path="/Tommy" component={Tommy} />
+              <Route exact path="/Coutries" component={Coutries} />
+              <Route exact path="/Coutries2" component={Coutries2} />
+
               <Route exact path="/PilotTable" component={PilotTable} />
               <Route exact path="/VoiceRecorder" component={VoiceRecorder} />
               <Route exact path="/Table" component={Table} />
