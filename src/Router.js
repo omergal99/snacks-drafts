@@ -10,6 +10,7 @@ import Tommy from './pages/Tommy';
 import Coutries from './pages/Coutries';
 import Coutries2 from './pages/Coutries2';
 import Select3 from './pages/Select3';
+import OrderList from './pages/OrderList';
 
 import PilotTable from './pages/PilotTable';
 import VoiceRecorder from './pages/VoiceRecorder';
@@ -41,6 +42,7 @@ class Router extends Component {
               <Route exact path="/Coutries" component={Coutries} />
               <Route exact path="/Coutries2" component={Coutries2} />
               <Route exact path="/Select3" component={Select3} />
+              <Route exact path="/OrderList" component={OrderList} />
 
               <Route exact path="/PilotTable" component={PilotTable} />
               <Route exact path="/VoiceRecorder" component={VoiceRecorder} />
