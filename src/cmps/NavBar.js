@@ -10,7 +10,6 @@ const NavBar = () => (
     <NavLink to="/Coutries" activeClassName="activeRoute">Coutries</NavLink>
     <NavLink to="/Coutries2" activeClassName="activeRoute">Coutries2</NavLink>
     <NavLink to="/select3" activeClassName="activeRoute">select3</NavLink>
-    <NavLink to="/OrderList" activeClassName="activeRoute">OrderList</NavLink>
 
     {/* <NavLink to="/PilotTable" activeClassName="activeRoute">Pilot</NavLink>
     <NavLink to="/VoiceRecorder" activeClassName="activeRoute">VoiceRecorder</NavLink>
