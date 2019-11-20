@@ -1,10 +1,48 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
+// import React, { useEffect, useRef } from "react";
 
 function Select3() {
 
   // const pathRef = useRef(null);
 
+  // const welcomeAudio = new Audio("assets/sounds/welcomeToAtlantic.mp3");
+  // welcomeAudio.play();
+
+  // const welcomeAudio = new Audio("assets/sounds/welcomeToAtlantic.mp3");
+  // const promise = welcomeAudio.play();
+  // promise.then(audio => audio.play()).catch(() => { });
+
+  // if (promise !== undefined) {
+
+  // promise.then(audio => {
+  //   console.log('lalala')
+  //   audio.play();
+  // }).catch(error => {
+  //   console.log('dddd')
+  // });
+
+  // }
+
   useEffect(() => {
+    const welcomeAudio = new Audio("assets/sounds/welcomeToAtlantic.mp3");
+    const promise = welcomeAudio.play();
+    promise && promise.then(audio => audio.play()).catch(() => { });
+
+    // if (promise !== undefined) {
+    //   promise.then(audio => {
+    //     // Autoplay started!
+    //     audio.play();
+    //   })
+    //     .catch(error => {
+    //       // Autoplay was prevented.
+    //       // Show a "Play" button so that user can start playback.
+    //     });
+    // }
+    // if (promise !== undefined) promise.then(audio => { audio.play() })
+    // let timeout = setTimeout(() => welcomeAudio.pause(), 3000);
+    return () => {
+      // clearTimeout(timeout);
+    }
     // const box = document.getElementById("path20").getBBox();
     // console.log(box)
     // console.log(pathRef)
@@ -60,509 +98,8 @@ function Select3() {
           <span>flag: Icon</span>
           <span>%</span>
         </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-        <div className="item">
-          <span>Country: Country Name</span>
-          <span>flag: Icon</span>
-          <span>%</span>
-        </div>
-      </div>
+      </div >
     </div >
-
   );
 }
 
