@@ -4,18 +4,18 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 
 // PAGES
 import Main from './pages/Main';
-import Main2 from './pages/Main2';
+import NewZelandTest from './pages/NewZelandTest';
+import JustRectangle from './pages/JustRectangle';
 import Human from './pages/Human';
 import Tommy from './pages/Tommy';
 import Coutries from './pages/Coutries';
 import Coutries2 from './pages/Coutries2';
-import Select3 from './pages/Select3';
-
+import ScrollAndFab from './pages/ScrollAndFab';
 import PilotTable from './pages/PilotTable';
 import VoiceRecorder from './pages/VoiceRecorder';
 import Table from './pages/Table';
-import Example2 from './pages/Example2';
-import Example3 from './pages/Example3';
+import CodeSandbox from './pages/CodeSandbox';
+import UiHudBoxCorner from './pages/UiHudBoxCorner';
 
 //CMPS
 import NavBar from './cmps/NavBar';
@@ -35,18 +35,18 @@ class Router extends Component {
           <div className="route">
             <Switch>
               <Route exact path="/" component={Main} />
-              <Route exact path="/Main2" component={Main2} />
+              <Route exact path="/NewZelandTest" component={NewZelandTest} />
+              <Route exact path="/JustRectangle" component={JustRectangle} />
               <Route exact path="/Human" component={Human} />
               <Route exact path="/Tommy" component={Tommy} />
-              <Route exact path="/Coutries" component={Coutries} />
-              <Route exact path="/Coutries2" component={Coutries2} />
-              <Route exact path="/Select3" component={Select3} />
-
               <Route exact path="/PilotTable" component={PilotTable} />
               <Route exact path="/VoiceRecorder" component={VoiceRecorder} />
               <Route exact path="/Table" component={Table} />
-              <Route exact path="/Example2" component={Example2} />
-              <Route exact path="/Example3" component={Example3} />
+              <Route exact path="/CodeSandbox" component={CodeSandbox} />
+              <Route exact path="/Coutries" component={Coutries} />
+              <Route exact path="/Coutries2" component={Coutries2} />
+              <Route exact path="/ScrollAndFab" component={ScrollAndFab} />
+              <Route exact path="/UiHudBoxCorner" component={UiHudBoxCorner} />
             </Switch>
           </div>
 

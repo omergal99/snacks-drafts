@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 // import ReactDOM from "react-dom";
 
-function Example2() {
+function CodeSandbox() {
   const [h1Text, setH1Text] = useState('Hello CodeSandbox');
 
    const changeHeader = (ev) =>{
@@ -17,4 +17,4 @@ function Example2() {
   );
 }
 
-export default React.memo(Example2);
+export default React.memo(CodeSandbox);

@@ -1,91 +1,20 @@
 .main {
-  header {
-    h2,
-    p {
-      color: rgb(244, 254, 224);
-    }
-    margin: 40px 0 40px 0;
-  }
-
-  .img-container {
-    margin-left: 60px;
-    div {
-      width: 300px;
-      height: auto;
-      margin-right: 60px;
-      margin-bottom: 60px;
-      border: 1px solid rgba(202, 202, 202, 0.55);
-      background-repeat: no-repeat;
-      cursor: pointer;
-      transition: transform 0.4s;
-      &:hover {
-        position: relative;
-        transform: scale(1.05);
-      }
-      &.circle {
-        height: 300px;
-        background-image: url("../img/new-zealand-1.jpg");
-        border-radius: 50%;
-        background-position: -264px -234px;
-        background-size: 826px;
-      }
-      &.reactangle {
-        height: 150px;
-        background-image: url("../img/new-zealand-2.jpg");
-        background-position: -264px -143px;
-        background-size: 826px;
-      }
-      &.square {
-        height: 300px;
-        background-image: url("../img/new-zealand-3.jpg");
-        background-position: -264px -234px;
-        background-size: 826px;
-      }
-      &.triangle {
-        height: 260px;
-        background-color: rgba(202, 202, 202, 0.55);
-        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        position: relative;
-      }
-      &.triangle::before {
-        content: "";
-        height: 256px;
-        width: 296px;
-        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        background-image: url("../img/new-zealand-4.jpg");
-        background-position: -182px -280px;
-        background-size: 828px;
-        display: block;
-        position: relative;
-        top: 2px;
-        left: 1px;
-      }
-    }
-  }
-  .overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(54, 178, 190);
-    top: 0;
-    left: 0;
-    h2 {
-      color: rgb(244, 254, 224);
-    }
-    .btn-close {
-      cursor: pointer;
-      position: absolute;
-      top: 6px;
-      right: 8px;
-      font-size: 4em;
-      display: inline-block;
-      color: rgb(244, 254, 224);
-    }
-    .img-Extended {
-      height: 70%;
-      width: 80%;
-      margin: 50px auto 0 auto;
-      background-repeat: no-repeat;
+  display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    grid-gap: 30px;
+    padding: 30px;
+  .link{
+    background-color: #c4e0ff;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    color: black;
+    font-size: 1.2rem;
+    transition: all 0.4s;
+    &:hover{
+      background-color: #9dc4f0;
     }
   }
 }

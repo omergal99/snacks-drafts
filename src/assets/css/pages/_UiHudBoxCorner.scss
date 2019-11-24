@@ -1,0 +1,15 @@
+.UiHudBoxCorner{
+  background-color: #c5c5c5;
+  height: 100%;
+  span{
+    padding: 0 0 150px 0;
+    display: block;
+  }
+  .rect{
+    background-color: #93bfd2;
+    margin: 0 auto;
+    height: 320px;
+    width: 320px;
+    border: 2px solid gold;
+  }
+}
