@@ -11,7 +11,7 @@ class Main extends Component {
 
   render() {
     const list = this.state.pages.map(page => {
-      return <Link className="link" to={`/${page}`} activeClassName="activeRoute">{page}</Link>
+      return <Link key={page} className="link" to={`/${page}`} activeclassname="activeRoute">{page}</Link>
     })
     return (
       <section className="main">

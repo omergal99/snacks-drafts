@@ -1,15 +1,107 @@
-.UiHudBoxCorner{
+.UiHudBoxCorner {
   background-color: #c5c5c5;
   height: 100%;
-  span{
-    padding: 0 0 150px 0;
+  & > * {
+    margin: 0 auto 20px auto;
+  }
+  span {
+    padding: 0 0 20px 0;
     display: block;
   }
-  .rect{
+  .rect {
     background-color: #93bfd2;
-    margin: 0 auto;
-    height: 320px;
-    width: 320px;
+    height: 150px;
+    width: 150px;
     border: 2px solid gold;
+  }
+
+  .rainbow {
+    position: relative;
+    z-index: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -2;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: 50% 50%, 50% 50%;
+      background-position: -75% -75%, 175% -75%, 175% 175%, -75% 175%;
+      background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300),
+        linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+      animation: rotate 4s linear infinite;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 4px;
+      top: 4px;
+      width: calc(100% - 8px);
+      height: calc(100% - 8px);
+      background: #c5c5c5;
+      border-radius: 5px;
+    }
+  }
+
+  .span-asist {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    border: 1px solid #000;
+    &:before {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      border-top: 1px solid #000;
+      border-left: 1px solid #000;
+    }
+    &:after {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      border-top: 1px solid #000;
+      border-right: 1px solid #000;
+    }
+    span:before {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      bottom: -10px;
+      left: -10px;
+      border-bottom: 1px solid #000;
+      border-left: 1px solid #000;
+    }
+    span:after {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+      border-bottom: 1px solid #000;
+      border-right: 1px solid #000;
+    }
   }
 }

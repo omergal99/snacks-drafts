@@ -11,6 +11,13 @@ function UiHudBoxCorner() {
       <span>UiHudBoxCorner</span>
 
       <div className="rect"></div>
+      <div className="rainbow">
+        Rainbow border
+      </div>
+
+      <div className="span-asist">
+        <span></span>
+      </div>
     </div >
   );
 }
