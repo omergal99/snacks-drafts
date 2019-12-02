@@ -6,7 +6,7 @@ class Main extends Component {
   state = {
     pages: ['NewZelandTest', 'JustRectangle', 'Human', 'Tommy', 'PilotTable', 'VoiceRecorder', 'Table', 
     'CodeSandbox', 'Coutries', 'Coutries2',
-     'ScrollAndFab','UiHudBoxCorner'],
+     'ScrollAndFab','UiHudBoxCorner','GridDrafts'],
   }
 
   render() {

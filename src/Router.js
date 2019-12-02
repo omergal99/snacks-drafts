@@ -16,6 +16,7 @@ import VoiceRecorder from './pages/VoiceRecorder';
 import Table from './pages/Table';
 import CodeSandbox from './pages/CodeSandbox';
 import UiHudBoxCorner from './pages/UiHudBoxCorner';
+import GridDrafts from './pages/GridDrafts';
 
 //CMPS
 import NavBar from './cmps/NavBar';
@@ -47,6 +48,7 @@ class Router extends Component {
               <Route exact path="/Coutries2" component={Coutries2} />
               <Route exact path="/ScrollAndFab" component={ScrollAndFab} />
               <Route exact path="/UiHudBoxCorner" component={UiHudBoxCorner} />
+              <Route exact path="/GridDrafts" component={GridDrafts} />
             </Switch>
           </div>
 
