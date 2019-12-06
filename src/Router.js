@@ -17,6 +17,7 @@ import Table from './pages/Table';
 import CodeSandbox from './pages/CodeSandbox';
 import UiHudBoxCorner from './pages/UiHudBoxCorner';
 import GridDrafts from './pages/GridDrafts';
+import Countries3 from './pages/Countries3';
 
 //CMPS
 import NavBar from './cmps/NavBar';
@@ -49,6 +50,7 @@ class Router extends Component {
               <Route exact path="/ScrollAndFab" component={ScrollAndFab} />
               <Route exact path="/UiHudBoxCorner" component={UiHudBoxCorner} />
               <Route exact path="/GridDrafts" component={GridDrafts} />
+              <Route exact path="/Countries3" component={Countries3} />
             </Switch>
           </div>
 

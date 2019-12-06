@@ -26,38 +26,6 @@
       box-shadow: inset 0px 0px 0px 5px rgb(17, 29, 41);
       background-color: #283e52;
     }
-    // &::-webkit-scrollbar-button:single-button {
-    //   background-color: #3b697e;
-    //   display: block;
-    //   border-style: solid;
-    //   height: 16px;
-    // }
-
-    // /* Turn on single button up on top, and down on bottom */
-    // &::-webkit-scrollbar-button:start:decrement,
-    // &::-webkit-scrollbar-button:end:increment {
-    //   display: block;
-    // }
-
-    // /* Turn off the down area up on top, and up area on bottom */
-    // &::-webkit-scrollbar-button:start:increment,
-    // &::-webkit-scrollbar-button:end:decrement {
-    //   display: none;
-    // }
-
-    // /* Place The scroll down button at the bottom */
-    // &::-webkit-scrollbar-button:end:increment {
-    //   // background-image: url();
-    //   background-size: cover;
-    //   background-image: url(https://www.wpclipart.com/signs_symbol/button/metal_buttons/arrow_button_metal_red_up.png);
-    // }
-
-    // /* Place The scroll up button at the up */
-    // &::-webkit-scrollbar-button:start:decrement {
-    //   background-size: cover;
-    //   background-image: url(https://www.wpclipart.com/signs_symbol/button/metal_buttons/arrow_button_metal_red_up.png);
-    // }
-
     &::-webkit-scrollbar-button:single-button {
       &:vertical {
         background-size: cover;
@@ -73,27 +41,10 @@
       }
     }
 
-    // &::-webkit-scrollbar-button:single-button {
-    //   &:vertical:decrement {
-    //     border-width: 0px 8px 10px 8px;
-    //     border-color: transparent transparent #d6d6d6 transparent;
-    //     &:hover {
-    //       border-color: transparent transparent #fff transparent;
-    //     }
-    //   }
-    //   &:vertical:increment {
-    //     border-width: 10px 8px 0px 8px;
-    //     border-color: #d6d6d6 transparent transparent transparent;
-    //     &:hover {
-    //       border-color: #fff transparent transparent transparent;
-    //     }
-    //   }
-    // }
-
     .item {
       padding: 8px 4px;
       display: grid;
-      height: 80px;
+      // height: 80px;
       grid-template: 1fr / 1fr 1fr;
       padding: 16px 4px;
       border-bottom: 1px solid lightblue;
