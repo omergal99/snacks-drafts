@@ -18,6 +18,7 @@
     .item {
       padding: 1rem;
       min-height: calc((100vh - 4rem - 2rem - 1rem) / 2 - 1rem);
+      height: calc((100vh - 4rem - 2rem - 1rem) / 2 - 1rem);
       // height: calc((100vh - 4rem - 34px - 1rem) / 2 - 1rem);
       color: ghostwhite;
       background-color: #5d5d5d;
@@ -33,7 +34,7 @@
         background-color: #634343;
       }
       &:nth-child(3) {
-        background-color: #3a5e63;
+        background-color: #404040;
       }
       &:nth-child(4) {
         background-color: #323957;

@@ -25,8 +25,17 @@ function GridDrafts() {
       {item === 3 &&
         <>
           <h3>line in svg</h3>
-          <svg style={{ top: '135px', left: '150px', height: '310px', width: '223px', filter: 'drop-shadow( 3px -3px 3px #30ff1f)' }}>
-            <line y1="210" y2="40" x1="30" x2="198" style={{ stroke: '#48ff92' }}></line>
+          <svg style={{
+            top: '135px', left: '150px', height: '310px', width: '223px',
+            // filter: 'drop-shadow( 0 0 3px #30ff1f)'
+          }}>
+            <defs>
+              <filter id="shadow">
+                <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#30ff1f" />
+              </filter>
+            </defs>
+            <line y1="210" y2="40" x1="30" x2="198" 
+            style={{ stroke: '#48ff92', filter: 'url(#shadow)', strokeLinecap:'round', strokeWidth: '2px' }}></line>
           </svg>
         </>
       }
