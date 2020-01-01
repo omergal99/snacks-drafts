@@ -1,14 +1,16 @@
 @import './pages/main';
-@import './pages/newZelandTest';
-@import './pages/JustRectangle';
-@import './pages/human';
-@import './pages/tommy';
-@import './pages/coutries';
-@import './pages/ScrollAndFab';
 
-@import './pages/pilotTable';
-@import './pages/VoiceRecorder';
-@import './pages/table';
-@import './pages/CodeSandbox';
-@import './pages/UiHudBoxCorner';
-@import './pages/GridDrafts';
+@import './pages/level1/newZelandTest';
+@import './pages/level1/JustRectangle';
+@import './pages/level1/human';
+@import './pages/level1/tommy';
+@import './pages/level1/pilotTable';
+@import './pages/level1/table';
+@import './pages/level1/CodeSandbox';
+@import './pages/level1/VoiceRecorder';
+@import './pages/level1/ScrollAndFab';
+
+@import './pages/countries/coutries';
+@import './pages/countries/GridDrafts';
+
+@import './pages/boxCorner/UiHudBoxCorner';

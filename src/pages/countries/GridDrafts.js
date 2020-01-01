@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
-import TodoList from '../cmps/TodoList';
-import TodoDetails from '../cmps/TodoDetails';
+import TodoList from '../../cmps/TodoList';
+import TodoDetails from '../../cmps/TodoDetails';
 
 function GridDrafts() {
 
@@ -24,6 +24,7 @@ function GridDrafts() {
       }
       {item === 3 &&
         <>
+          <h3>line in svg</h3>
           <svg style={{ top: '135px', left: '150px', height: '310px', width: '223px', filter: 'drop-shadow( 3px -3px 3px #30ff1f)' }}>
             <line y1="210" y2="40" x1="30" x2="198" style={{ stroke: '#48ff92' }}></line>
           </svg>
@@ -31,6 +32,7 @@ function GridDrafts() {
       }
       {item === 4 &&
         <>
+          <h3>div line</h3>
           <div className="div-line"
             style={{
               height: '1px', background: 'rgb(98, 255, 162)', borderRadius: '4px',

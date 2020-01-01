@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 function Coutries3() {
 
-  
+
   useEffect(() => {
     const box = document.getElementById("path431").getBBox();
     console.log(box)
@@ -125,6 +125,7 @@ function Coutries3() {
             transform="translate(750,200)">
           </circle>
         </svg>
+
       </div>
     </div >
 

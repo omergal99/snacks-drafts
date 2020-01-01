@@ -4,20 +4,25 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 
 // PAGES
 import Main from './pages/Main';
-import NewZelandTest from './pages/NewZelandTest';
-import JustRectangle from './pages/JustRectangle';
-import Human from './pages/Human';
-import Tommy from './pages/Tommy';
-import Coutries from './pages/Coutries';
-import Coutries2 from './pages/Coutries2';
-import ScrollAndFab from './pages/ScrollAndFab';
-import PilotTable from './pages/PilotTable';
-import VoiceRecorder from './pages/VoiceRecorder';
-import Table from './pages/Table';
-import CodeSandbox from './pages/CodeSandbox';
-import UiHudBoxCorner from './pages/UiHudBoxCorner';
-import GridDrafts from './pages/GridDrafts';
-import Countries3 from './pages/Countries3';
+
+import NewZelandTest from './pages/level1/NewZelandTest';
+import JustRectangle from './pages/level1/JustRectangle';
+import Human from './pages/level1/Human';
+import Tommy from './pages/level1/Tommy';
+import ScrollAndFab from './pages/level1/ScrollAndFab';
+import PilotTable from './pages/level1/PilotTable';
+import VoiceRecorder from './pages/level1/VoiceRecorder';
+import Table from './pages/level1/Table';
+import CodeSandbox from './pages/level1/CodeSandbox';
+
+import UiHudBoxCorner from './pages/boxCorner/UiHudBoxCorner';
+
+import GridDrafts from './pages/countries/GridDrafts';
+import Coutries from './pages/countries/Coutries';
+import Coutries2 from './pages/countries/Coutries2';
+import Countries3 from './pages/countries/Countries3';
+
+import ImportImgs from './pages/level2/ImportImgs';
 
 //CMPS
 import NavBar from './cmps/NavBar';
@@ -45,12 +50,13 @@ class Router extends Component {
               <Route exact path="/VoiceRecorder" component={VoiceRecorder} />
               <Route exact path="/Table" component={Table} />
               <Route exact path="/CodeSandbox" component={CodeSandbox} />
-              <Route exact path="/Coutries" component={Coutries} />
-              <Route exact path="/Coutries2" component={Coutries2} />
               <Route exact path="/ScrollAndFab" component={ScrollAndFab} />
               <Route exact path="/UiHudBoxCorner" component={UiHudBoxCorner} />
               <Route exact path="/GridDrafts" component={GridDrafts} />
+              <Route exact path="/Coutries" component={Coutries} />
+              <Route exact path="/Coutries2" component={Coutries2} />
               <Route exact path="/Countries3" component={Countries3} />
+              <Route exact path="/ImportImgs" component={ImportImgs} />
             </Switch>
           </div>
 

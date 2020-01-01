@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 // import React, { useEffect, useState } from "react";
 
 
-import PilotSwitch from '../cmps/PilotSwitch';
+import PilotSwitch from '../../cmps/PilotSwitch';
 
 function PilotTable() {
   const counts = [true, true, false];

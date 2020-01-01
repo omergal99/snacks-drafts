@@ -5,9 +5,6 @@ function TodoList() {
   const [list, setList] = useState([]);
   const [value, setValue] = useState('');
 
-  const updateValue = ev => {
-    setValue(ev.target.value);
-  }
   const addNew = () => {
     setList(list => ([...list, { name: value }]));
     setValue('');
@@ -23,7 +20,7 @@ function TodoList() {
     <div className="TodoList">
       <h3>TodoList</h3>
       <div>
-        <input type="text" onChange={updateValue} value={value} />
+        <input type="text" onChange={ev => setValue(ev.target.value)} value={value} />
         <span onClick={addNew}>New</span>
       </div>
       <div>
