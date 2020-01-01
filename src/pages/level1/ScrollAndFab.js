@@ -7,8 +7,12 @@ function ScrollAndFab() {
 
   useEffect(() => {
     // const welcomeAudio = new Audio("assets/sounds/welcomeToAtlantic.mp3");
-    // const promise = welcomeAudio.play();
-    // promise && promise.then(audio => audio.play()).catch(() => { });
+    const welcomeAudio = new Audio("assets/sounds/voice1.mp3");
+    // const welcomeAudio = new Audio("assets/sounds/voice2.mp3");
+    // const welcomeAudio = new Audio("assets/sounds/voice3.mp3");
+    const promise = welcomeAudio.play();
+    promise && promise.then(audio => audio.play()).catch(() => { });
+
     console.log(pathRef)
     const box = document.getElementById("path20").getBBox();
     console.log(box)
