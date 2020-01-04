@@ -1,5 +1,11 @@
 @import './pages/main';
 
+
+@import './pages/countries/coutries';
+@import './pages/countries/GridDrafts';
+
+@import './pages/boxCorner/UiHudBoxCorner';
+
 @import './pages/level1/newZelandTest';
 @import './pages/level1/JustRectangle';
 @import './pages/level1/human';
@@ -10,7 +16,7 @@
 @import './pages/level1/VoiceRecorder';
 @import './pages/level1/ScrollAndFab';
 
-@import './pages/countries/coutries';
-@import './pages/countries/GridDrafts';
 
-@import './pages/boxCorner/UiHudBoxCorner';
+@import './pages/level2/ElectronLogin';
+@import './pages/level2/ImportImgs';
+

@@ -23,6 +23,7 @@ import Coutries2 from './pages/countries/Coutries2';
 import Countries3 from './pages/countries/Countries3';
 
 import ImportImgs from './pages/level2/ImportImgs';
+import ElectronLogin from './pages/level2/ElectronLogin';
 
 //CMPS
 import NavBar from './cmps/NavBar';
@@ -57,6 +58,7 @@ class Router extends Component {
               <Route exact path="/Coutries2" component={Coutries2} />
               <Route exact path="/Countries3" component={Countries3} />
               <Route exact path="/ImportImgs" component={ImportImgs} />
+              <Route exact path="/ElectronLogin" component={ElectronLogin} />
             </Switch>
           </div>
 
