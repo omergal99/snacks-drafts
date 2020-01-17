@@ -1,0 +1,7 @@
+@mixin pseudo-border() {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}

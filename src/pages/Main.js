@@ -7,7 +7,7 @@ class Main extends Component {
     pages: ['NewZelandTest', 'JustRectangle', 'Human', 'Tommy', 'PilotTable', 'VoiceRecorder', 'Table',
       'CodeSandbox', 'Coutries', 'Coutries2',
       'ScrollAndFab', 'UiHudBoxCorner', 'GridDrafts', 'Countries3',
-      'ImportImgs', 'ElectronLogin'],
+      'ImportImgs', 'ElectronLogin','ApproveScreen'],
   }
 
   render() {

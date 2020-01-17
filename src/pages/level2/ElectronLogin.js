@@ -75,7 +75,6 @@ function ElectronLogin() {
   return (
     <div className="ElectronLogin">
       <div className="overlay"></div>
-      <div className="scanlines"></div>
       {!initOneTime &&
         <div className="typewriter">
           <h1 className="welcome-words">&nbsp;Welcome to Electron</h1>

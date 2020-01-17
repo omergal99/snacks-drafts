@@ -24,6 +24,7 @@ import Countries3 from './pages/countries/Countries3';
 
 import ImportImgs from './pages/level2/ImportImgs';
 import ElectronLogin from './pages/level2/ElectronLogin';
+import ApproveScreen from './pages/level2/ApproveScreen';
 
 //CMPS
 import NavBar from './cmps/NavBar';
@@ -59,6 +60,7 @@ class Router extends Component {
               <Route exact path="/Countries3" component={Countries3} />
               <Route exact path="/ImportImgs" component={ImportImgs} />
               <Route exact path="/ElectronLogin" component={ElectronLogin} />
+              <Route exact path="/ApproveScreen" component={ApproveScreen} />
             </Switch>
           </div>
 
